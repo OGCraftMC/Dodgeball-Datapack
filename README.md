@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Hi and welcome to this mess of a Dodgeball pack
 
 This was made on version 1.21.6 so don't run it on other versions without expecting issues. It will not be updated to support future or previous versions of the game.
