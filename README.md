@@ -1,31 +1,39 @@
-# Setup
-To setup this datapack, you can click `Use this template`, fork this repository or click the `Download ZIP` button that appears after clicking the `<> Code` button.
+<<<<<<< HEAD
+Hi and welcome to this mess of a Dodgeball pack
 
-Once unzipped and open in Visual Studio Code, press Ctrl+Shift+H, and replace `brainage_template` with your namespace (e.g. `brainage_world_setup`) and replace `Brainage's Template` with the name of your datapack (e.g. `Brainage's World Setup`). Make sure it's reasonably short but uniquely identifiable, as people will be typing your triggers to use the features in your datapack (also to avoid potentially conflicting namespaces with other datapacks).
+This was made on version 1.21.6 so don't run it on other versions without expecting issues. It will not be updated to support future or previous versions of the game.
 
-Be sure to also rename the `brainage_template` folder to what you replaced the `brainage_template` occurences in files with (e.g. `brainage_world_setup`)
+This only works with 2 teams; Red and Blue. 
+If you want different colours, tough :shrug:
 
-Next, in the `pack.mcmeta` file, replace the template description (`Datapack Template by Brainage`) with a brief explanation of what your datapack does (e.g. `Performs world setup commands`). You may also optionally add a thumbnail to the datapack by adding an image to the root folder with the name `pack.png`.
+Anywho....
 
-Next, copy the datapack folder (containing `data`, `README.md` and `pack.mcmeta`), navigate to your world file (usually `.minecraft/saves/(your world name)`) in File Explorer, create the `datapacks` folder if it does not exist, and paste the datapack in the `datapacks` folder.
+To get started;
+Make an arena (the only thing I can't do for you)
 
-Once the datapack is in your world's `datapacks` folder, execute the `/reload` command to load the datapack.
+Do /function dodgeball:give and you'll get 9 armour stands for the waypoints. You need to place these where they need to go. This pack is good but it's not witchcraft
 
-If your datapack adds certain features such as dimensions, structures, features or changes to world generation, `/reload` will have no effect. You will need to restart the server to see these changes.
+Blue Team Hub - This is where your players stand if they want to go onto the Blue Team
+Red Team Hub - This is where your players stand if they want to go onto the Red Team
+Spectator Hub - This is where your players stand if they are wanting to spectate the match
+Blue Team Spawn - Where the Blue Team gets teleported to when the game starts
+Red Team Spawn - Where the Red Team gets teleported to when the game starts
+Spectator Spawn - Where the Spectators gets teleported to when the game starts
+Blue Team Dodgeball Spawn - Spawns dodgeballs for the Blue Team
+Red Team Dodgeball Spawn - Spawns dodgeballs for the Red Team
+Debug Mode - Exactly what it says. Only use this if you are going to read all the files. To leave debug mode do /kill @e[tag=Dodgeball_Debug_Mode]
 
-# Features
-This datapack has a few useful features to assist in making the user experience as friendly as possible. There are about and config triggers which let players view the about sections and config sections of the datapack.
+To start the game run /function dodgeball:start
+How you do that is up to you. Command block it, schedule it, somehow activate it via a tin can on a piece of string, everyone's different.
 
-The about trigger should be used to tell users about important features in the datapack that might not be immediately obvious to the average player. Things such as new recipes, loot table changes and structures should be briefly explained or at least mentioned in this section.
-
-The config trigger allows operators to install and uninstall the datapack if changes are added while the datapack is installed. If you wish to add config options to this trigger, please make sure you use `run_command` for your click events if you want all players to be able to use them, and `suggest_command` if you want only operators to be able to use them. The install/uninstall config options are for operators only - you can take a look at how they are implemented, copy the format and press Ctrl+H to replace `suggest_command` with `run_command` for your new options if necessary.
-
-This datapack also executes a function when a player joins the world for their first time. This can be used to do things such as assigning them to a team or giving them items to start their playthrough.
-
-There is also a 1 second loop where you can put your more computationally-expensive commands, such as NBT data queries or uses of `/execute`.
+Enjoy the pack!
+Only contact OGCraft if the pack isn't working as intended AND you're on 1.21.6 https://ogcraft.org/discord
 
 
-# Additional Resources
-- https://datapack.wiki/
-- https://misode.github.io/
-- https://mcreator.net/about/minecraft-data-pack-maker
+© 2025 RedstoneSam. All rights reserved.
+
+This datapack is the intellectual property of RedstoneSam.  
+Unauthorised redistribution, modification, or re-uploading of this datapack is strictly prohibited.  
+Only individuals with direct approval from Discord user RedstoneSam are permitted to share or distribute any part of this datapack.
+
+By using this datapack, you agree to these terms.
